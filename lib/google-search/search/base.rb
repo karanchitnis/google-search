@@ -181,8 +181,12 @@ module Google
     # Return int for size _sym_.
     
     def self.size_for sym
-      { :small => 4,
-        :large => 8 }[sym]
+      { :small => 2,
+        :large => 4 }[sym]
+
+        #4, 8 produces 60 results
+        #2, 4 produces 120 results
+        #1, 2 produces around 240 reults
     end
     
     #:nodoc:
